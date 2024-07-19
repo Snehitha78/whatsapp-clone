@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js.js"></script>
+  </head>
+  <body>
+    
+    <div class="phone-status-bar">
+      <h1 class="heading-primary">WhatsApp</h1>
+      <div class="phone-status-bar__right-icon" style="display: flex;">
+        <form action=""><input type="search" id="searchInput" placeholder="Search..." />
+        <label for=""><i class="fa fa-search" aria-hidden="true"></i></label></form>
+        <div class="dropdown">
+          <button class="btn-secondary dropdown-toggle" style="background-color: transparent; border:none; color: #fff;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa fa-ellipsis-v" id="menuIcon" aria-hidden="true" ></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">New group</a></li><br>
+            <li><a class="dropdown-item" href="#">New broadcast</a></li><br>
+            <li><a class="dropdown-item" href="#">Linked devices</a></li><br>
+            <li><a class="dropdown-item" href="#">Starred messages</a></li><br>
+            <li><a class="dropdown-item" href="#">Payments</a></li><br>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      
+      <!-- <div id="menuDropdown" class="dropdown-content">
+        <a href="#">New group</a>
+        <a href="#">New broadcast</a>
+        <a href="#">Linked devices</a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+      </div> -->
+    </div>
+  </div>
+  
+    <div class="menu-bar">
+      <i class="fa fa-camera" aria-hidden="true"></i>
+      <ul class="menu-bar__list">
+        <li class="menu-bar__list-item" onclick="changeTab(1);">Chat</li>
+        <li class="menu-bar__list-item" onclick="changeTab(2);">Status</li>
+        <li class="menu-bar__list-item" onclick="changeTab(3);">Calls</li>
+      </ul>
+    </div>
+
+    <div class="chat-status-call">
+      <div class="chat-container">
+        <div class="contact-list">
+          <i class="material-icons"> chat </i>
+        </div>
+        
+      
+
+        <div class="chat-list">
+          <div class="person-profile">
+            <img src="anime.jpg" class="profile-img"/>
+            <div class="person-name">
+              <h3 class="persion-name-heading">Me</h3>
+              <p class="person-chat">How to make Whatsapp Clone</p>
+            </div>
+          </div>
+          <p class="last-chat-time">12:00 pm</p>
+        </div>
+
+        <div class="chat-list">
+          <div class="person-profile">
+            <img src="sarayuu.jpg" />
+            <div class="person-name">
+              <h3 class="persion-name-heading">Tarun</h3>
+              <p class="person-chat">Answer my phone!</p>
+            </div>
+          </div>
+          <p class="last-chat-time">11:30 am</p>
+        </div>
+
+        <div class="chat-list">
+          <div class="person-profile">
+            <img src="anime.jpg" />
+            <div class="person-name">
+              <h3 class="persion-name-heading">Kusumaaa</h3>
+              <p class="person-chat">Have you finished doing web ppt</p>
+            </div>
+          </div>
+          <p class="last-chat-time">11:00 am</p>
+        </div>
+
+        <div class="chat-list">
+          <div class="person-profile">
+            <img src="girl.jpg" />
+            <div class="person-name">
+              <h3 class="persion-name-heading">Dimple</h3>
+              <p class="person-chat">Assignment done?</p>
+            </div>
+          </div>
+          <p class="last-chat-time">11:01 am</p>
+        </div>
+
+        <div class="chat-list">
+          <div class="person-profile">
+            <img src="srmap.jpg" />
+            <div class="person-name">
+              <h3 class="persion-name-heading">Section-P</h3>
+              <p class="person-chat">
+                santhosh: No web class today<span class="tick">&#10003;</span
+                ><span class="tick2">&#10003;</span>
+              </p>
+            </div>
+          </div>
+          <p class="last-chat-time">9:00 am</p>
+        </div>
+
+        <div class="chat-list">
+          <div class="person-profile">
+            <img src="prabhas.jpg" />
+            <div class="person-name">
+              <h3 class="persion-name-heading">Chaitanyaa</h3>
+              <p class="person-chat">
+                Wt are you doing?<span class="tick">&#10003;</span
+                ><span class="tick2">&#10003;</span>
+              </p>
+            </div>
+          </div>
+          <p class="last-chat-time">yesterday</p>
+        </div>
+
+        <div class="chat-list">
+          <div class="person-profile">
+            <img src="sarayuu.jpg" />
+            <div class="person-name">
+              <h3 class="persion-name-heading">Sarayuu</h3>
+              <p class="person-chat">Have you finished doing web work?</p>
+            </div>
+          </div>
+          <p class="last-chat-time">yesterday</p>
+        </div>
+
+        <div class="chat-list">
+          <div class="person-profile">
+            <img src="cat.jpg" />
+            <div class="person-name">
+              <h3 class="persion-name-heading">Sujitha</h3>
+              <p class="person-chat">Is cls there?</p>
+            </div>
+          </div>
+          <p class="last-chat-time">Friday</p>
+        </div>
+
+        <div class="chat-list">
+          <div class="person-profile">
+            <img src="srmap.jpg" />
+            <div class="person-name">
+              <h3 class="persion-name-heading">Srm(2024-2026)</h3>
+              <p class="person-chat">
+                All are requested to join this grp immediately
+              </p>
+            </div>
+          </div>
+          <p class="last-chat-time">Friday</p>
+        </div>
+      </div>
+
+      <div class="status-container">
+        <div class="status-list-fixed">
+          <i class="fa fa-pencil fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-camera-retro fa-2x" aria-hidden="true"></i>
+        </div>
+
+        <div class="person-profile person-profile-status">
+          
+          <img src="" />
+          <div class="person-name">
+            <h2 class="persion-name-heading">My status</h2>
+            
+            <i class="fa fa-plus add-icon" aria-hidden="true" style="display: inline-block; margin-left: -60px;"></i>
+            <p class="person-chat" style="display: inline-block; margin-left: 30px;">Tap to see add status update</p>
+            
+          
+          
+          </div>
+        </div>
+        <h2 class="recent-update">Recent updates</h2>
+
+        <div class="chat-list">
+          <div class="person-profile">
+            <img src="" />
+            <div class="person-name">
+              <h1 class="persion-name-heading">sindhu</h1>
+              <p class="person-chat">42 minutes ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="call-container">
+        <div class="call-list">
+          <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="chat-list">
+          <div class="person-profile">
+            <img src="" />
+            <div class="person-name">
+              <h1 class="persion-name-heading">Navyaaa</h1>
+              <p class="person-chat">Today, 1:22am</p>
+            </div>
+          </div>
+          <p class="last-chat-time">
+            <i class="fa fa-phone fx-4x call-icon" aria-hidden="true"></i>
+          </p>
+        </div>
+
+        <div class="chat-list">
+          <div class="person-profile">
+            <img src="" />
+            <div class="person-name">
+              <h1 class="persion-name-heading">tarun</h1>
+              <p class="person-chat">Today, 12 :22am</p>
+            </div>
+          </div>
+          <p class="last-chat-time">
+            <i class="fa fa-video-camera call-icon" aria-hidden="true"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
